@@ -17,7 +17,7 @@ const ContinueReading = () => {
     return (
       <section className="bg-[#5c3d2e] text-[#4B3F36] px-16 py-20 font-serif">
         <h2 className="text-xl sm:text-2xl font-semibold mb-6 text-[#F2F2F2] italic">Continue Reading</h2>
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 gap-10">
           {items.map((item, index) => (
             <div
               key={index}
