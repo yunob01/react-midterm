@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "tailwindcss";
+@source "./pages";
+@source "./components";
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: "mytheme";
+  default: true; 
+  prefersdark: false;
+  color-scheme: light;
+  --color-primary: #6A4E42;
+}
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Noto+Sans:wght@400;700&display=swap');
+
+html,
+body {
+  line-height: 1.6;
+  background-color: #F4EBD9;
+}
+
+
+.main-layout {
+  display: grid;
+  min-height: 100vh;
+  grid-template-areas:
+    'header'
+    'content'
+    'footer'
+  ;
+  grid-template-rows: auto 1fr auto;
+  gap: 1rem;
+}
+
+
+.header {
+  grid-area: header;
+}
+
+
+.content {
+  grid-area: content;
+}
+
+
+.footer {
+  grid-area: footer;
+}

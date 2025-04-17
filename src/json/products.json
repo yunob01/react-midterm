@@ -1,0 +1,240 @@
+[
+    {
+        "id": 1,
+        "name": "Americano",
+        "price": 4.00,
+        "description": "A bold and expressive jazz journey, just like the depth of an Americano. Strong, timeless, and full of soul.",
+        "category": "Drinks",
+        "stock": 93,
+        "image": "/images/DRINKS_Americano.jpg",
+        "vinyl":{
+            "name": "Miles Davis – Kind of Blue",
+            "description":"Coltrane’s 1957 hard bop classic showcases his raw energy and improvisational genius — a foundational work in modern jazz.",
+            "image":"/images/VINYI_Miles Davis – Kind of Blue.jpg"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Latte",
+        "price": 5.00,
+        "description": "A smooth, iconic jazz classic. Like a latte, it's mellow, comforting, and elegantly composed.",
+        "category": "Drinks",
+        "stock": 40,
+        "image": "/images/DRINKS_Latte.jpg",
+        "vinyl":{
+            "name":  "Norah Jones – Come Away With Me",
+            "description": "A Grammy-winning debut blending jazz, pop, and soul — Norah’s smoky vocals offer comfort like a warm cup.",
+            "image":"/images/VINYI_Norah Jones – Come Away With Me.jpg"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Cappuccino",
+        "price": 5.00,
+        "description": "Rich and lively with a touch of flair — Ella’s vocals echo the creamy foam and strong espresso core of a cappuccino.",
+        "category": "Drinks",
+        "stock": 12,
+        "image": "/images/DRINKS_Cappuccino.jpeg",
+        "vinyl":{
+            "name":  "Ella Fitzgerald – Misty Blue",
+            "description": "A late-career gem mixing country and jazz — Ella’s emotional range shines with smooth phrasing and vintage charm.",
+            "image":"/images/VINYI_Ella Fitzgerald – Misty Blue.jpg"
+        }
+    },
+    {
+        "id": 4,
+        "name": "Caramel Macchiato",
+        "price": 5.50,
+        "description": "Sweet, mellow, and cozy. This album brings warmth, like caramel blending into soft espresso.",
+        "category": "Drinks",
+        "stock": 20,
+        "image": "/images/DRINKS_Caramel Macchiato.jpg",
+        "vinyl":{
+            "name": "Frank Sinatra – Fly Me to the Moon",
+            "description": "From the album “It Might as Well Be Swing”, Sinatra’s velvet voice and Basie’s big band bring timeless sophistication.",
+            "image":"/images/VINYI_Frank Sinatra – Fly Me to the Moon.jpg"
+        }
+    },
+    {
+        "id": 5,
+        "name": "Cold Brew Coffee",
+        "price": 6.00,
+        "description": "Cool, calm, and collected. Lo-fi beats echo the smooth, chilled essence of a cold brew.",
+        "category": "Drinks",
+        "stock": 54,
+        "image": "/images/DRINKS_Cold Brew Coffee.jpg",
+        "vinyl":{
+            "name": "Tycho – Awake",
+            "description": "A chillwave essential — Tycho’s blend of ambient guitar and electronic textures paints a serene, modern landscape.",
+            "image":"/images/VINYI_Tycho – Awake.jpg"
+        }
+    },
+    {
+        "id": 6,
+        "name": "Ice Drip Coffee",
+        "price": 6.50,
+        "description": "Slow, delicate, and refined. Like the drop-by-drop process, this album is a quiet masterpiece.",
+        "category": "Drinks",
+        "stock": 18,
+        "image": "/images/DRINKS_Ice Drip Coffee.jpg",
+        "vinyl":{
+            "name":  "Bonobo – Black Sands",
+            "description":  "A downtempo classic, merging trip-hop and jazz with lush orchestration — perfect for introspective moods.",
+            "image":"/images/VINYI_Bonobo – Black Sands.jpg"
+        }
+    },
+    {
+        "id": 7,
+        "name": "Vanilla Latte",
+        "price": 5.50,
+        "description": "Smooth vocals and nostalgic tunes mirror the classic sweetness and warmth of a vanilla latte.",
+        "category": "Drinks",
+        "stock": 60,
+        "image": "/images/DRINKS_Vanilla Latte.jpg",
+        "vinyl":{
+            "name": "John Mayer – Continuum",
+            "description": "A fusion of blues and soul-infused pop — Mayer explores vulnerability with crisp guitar work and honest lyricism.",
+            "image":"/images/VINYI_John Mayer – Continuum.jpg"
+        }
+    },
+    {
+        "id": 8,
+        "name": "Sea Salt Caramel Latte",
+        "price": 6.00,
+        "description": "A blend of sweet and unexpected. The soft bossa nova rhythm flows like salted caramel in every sip.",
+        "category": "Drinks",
+        "stock": 42,
+        "image": "/images/DRINKS_Sea Salt Caramel Latte.png",
+        "vinyl":{
+            "name": "Lana Del Rey – Norman Fucking Rockwell!",
+            "description": "A melancholic, cinematic pop album soaked in vintage Californian vibes — introspective, poetic, and bold.",
+            "image":"/images/VINYI_Lana Del Rey – Norman Fucking Rockwell!.jpg"
+        }
+    },
+    {
+        "id": 9,
+        "name": "Classic Tiramisu",
+        "price": 4.50,
+        "description": "Layered like a jazz improvisation — rich, smooth, and full of nostalgic depth.",
+        "category": "Desserts",
+        "stock": 50,
+        "image": "/images/DESSERT_Classic Tiramisu.jpg",
+        "vinyl":{
+            "name":  "Chet Baker – Chet Baker Sings", 
+            "description": "A soft, romantic West Coast jazz record filled with longing — Baker’s delicate trumpet and vocals are timeless.",
+            "image":"/images/VINYI_Chet Baker – Chet Baker Sings.jpg"
+        }
+    },
+    {
+        "id": 10,
+        "name": "Matcha Cheesecake",
+        "price": 5.00,
+        "description": "Subtle and introspective, this dessert mirrors the calm and experimental elegance of Sakamoto’s sonic landscapes.",
+        "category": "Desserts",
+        "stock": 27,
+        "image": "/images/DESSERT_Matcha Cheesecake.jpg",
+        "vinyl":{
+            "name": "Ryuichi Sakamoto – Thousand Knives",
+            "description": "An avant-garde fusion of jazz, electronica, and traditional Japanese tones — experimental and elegant.",
+            "image":"/images/VINYI_Ryuichi Sakamoto – Thousand Knives.jpg"
+        }
+    },
+    {
+        "id": 11,
+        "name": "Chocolate Lava Cake",
+        "price": 5.50,
+        "description": "A bold exterior with a molten core — like Hendrix’s solos, it bursts with rich intensity and untamed sweetness.",
+        "category": "Desserts",
+        "stock": 36,
+        "image": "/images/DESSERT_Chocolate Lava Cake.jpg",
+        "vinyl":{
+            "name": "Jimi Hendrix – Electric Ladyland",
+            "description":"Psychedelic rock and blues guitar mastery — Hendrix melts boundaries like chocolate in heat.", 
+            "image":"/images/VINYI_Jimi Hendrix – Electric Ladyland.jpg"
+        }
+    },
+    {
+        "id": 12,
+        "name": "Lemon Tart",
+        "price": 4.75,
+        "description": "Bright, sharp, and refreshingly balanced — a citrusy symphony echoing the playful experimentation of Revolver.",
+        "category": "Desserts",
+        "stock": 22,
+        "image": "/images/DESSERT_Lemon Tart.jpg",
+        "vinyl":{
+            "name": "The Beatles – Revolver",
+            "description": "A pop-rock masterpiece with inventive melodies and upbeat energy — citrusy, vibrant, and sharp.",
+            "image":"/images/VINYI_The Beatles – Revolver.jpg"
+        }
+    },
+    {
+        "id": 13,
+        "name": "Earl Grey Madeleine",
+        "price": 4.25,
+        "description": "Delicate and poetic, this floral sponge cake pairs perfectly with Kent’s soft vocals and café jazz moods.",
+        "category": "Desserts",
+        "stock": 12,
+        "image": "/images/DESSERT_Earl Grey Madeleine.jpg",
+        "vinyl":{
+            "name": "Stacey Kent – Breakfast on the Morning Tram",
+            "description":  "A smooth blend of modern jazz and French café vibes — light and poetic, perfect for afternoon tea.",
+            "image":"/images/VINYI_Stacey Kent – Breakfast on the Morning Tram.jpg"
+        }
+    },
+    {
+        "id": 14,
+        "name": "Strawberry Shortcake",
+        "price": 5.00,
+        "description": "Sweet, airy, and full of charm — like Taylor’s pop ballads, it brings joy with every bite and a touch of romance.",
+        "category": "Desserts",
+        "stock": 15,
+        "image": "/images/DESSERT_Strawberry Shortcake.jpg",
+        "vinyl":{
+            "name":  "Taylor Swift – Lover",
+            "description": "A vibrant, colorful pop record full of sweetness and romantic highs — youthful and melodic.",
+            "image": "/images/VINYI_Taylor Swift – Lover.png"
+        }
+    },
+    {
+        "id": 15,
+        "name": "Vinyl & Coffee Tote Bag",
+        "price": 15.00,
+        "description": "A minimalist cotton tote made for crate-diggers and café hoppers. Roomy enough for your daily brew and favorite LPs.",
+        "category": "Vinyl Picks",
+        "stock": 11,
+        "image": "/images/VINYIPICK_Vinyl & Coffee Tote Bag.png",
+        "vinyl":{
+            "name": "Diana Krall – The Look of Love",
+            "description": "Norah Jones’ Come Away with Me is a landmark debut album that introduced her signature blend of jazz, folk, country, and pop. Here’s why it stands out.",
+            "image": "/images/VINYI_Diana Krall – The Look of Love.jpg"
+        }
+    },
+    {
+        "id": 16,
+        "name": "Groove Coaster Set",
+        "price": 10.00,
+        "description": "A set of 2 cork coasters styled like mini vinyl records. Protect your table in retro rhythm while sipping your espresso.",
+        "category": "Vinyl Picks",
+        "stock": 57,
+        "image": "/images/VINYIPICK_Groove Coaster Set.png",
+        "vinyl":{
+            "name": "Amy Winehouse – Back to Black",
+            "description": "A bold, soulful throwback to Motown and jazz — Amy’s voice carries heartbreak and heat with raw, vintage power.",
+            "image": "/images/VINYI_Amy Winehouse – Back to Black.jpg"
+        }
+    },
+    {
+        "id": 17,
+        "name": "Now Spinning Enamel Mug",
+        "price": 12.00,
+        "description": "Your perfect vinyl-listening companion — sip hot brews while your records spin. Features our signature \"Now Spinning\" logo.",
+        "category": "Vinyl Picks",
+        "stock": 60,
+        "image": "/images/VINYIPICK_Now Spinning Enamel Mug.png",
+        "vinyl":{
+            "name":  "Bill Evans – Waltz for Debby",
+            "description": "A graceful, introspective jazz trio record — warm and delicate, ideal for quiet moments and slow mornings.",
+            "image": "/images/VINYI_Bill Evans – Waltz for Debby.jpg"
+        }
+    }
+]
