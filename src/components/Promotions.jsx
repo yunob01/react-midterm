@@ -5,7 +5,7 @@ function Promotions() {
         <p className="text-[1.1rem] mb-8 text-[#A26E57] font-serif font-base font-normal mb-2 mt-10">
           “☕20% OFF All Espresso Drinks – Limited Time!”
         </p>
-        <div className="flex justify-center flex-wrap gap-6">
+        <div className="flex justify-center flex-wrap gap-10">
           <div className="w-[220px] bg-[#4B3F36] rounded-xl shadow-lg overflow-hidden text-[0.95rem] transform transition-transform duration-300 hover:scale-[1.03] hover:shadow-xl">
             <img
               src="/images/home-muffins.jpg"
