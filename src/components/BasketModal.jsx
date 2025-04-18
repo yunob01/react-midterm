@@ -15,7 +15,7 @@ export default function BasketModal({ isOpen, toggleDrawer }) {
          {isOpen && (
             <>
                <motion.div
-                  className="fixed inset-0 bg-black/50 z-0"
+                  className="fixed inset-0 bg-black/50 z-30"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
@@ -23,7 +23,7 @@ export default function BasketModal({ isOpen, toggleDrawer }) {
                />
 
                <motion.div
-                  className="fixed top-0 right-0 h-full w-full sm:w-[380px] bg-[#6e4b3a] p-6 shadow-lg z-10 text-[#FFF8F0] overflow-y-auto"
+                  className="fixed top-0 right-0 h-full w-full sm:w-[380px] bg-[#6e4b3a] p-6 shadow-lg z-40 text-[#FFF8F0] overflow-y-auto"
                   initial={{ x: "100%" }}
                   animate={{ x: 0 }}
                   exit={{ x: "100%" }}
