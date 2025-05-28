@@ -15,6 +15,31 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Noto+Sans:wght@400;700&display=swap');
 
+@plugin "daisyui" {
+  themes: light, dark;
+}
+
+@plugin "daisyui/theme" {
+  name: "dark";
+  --color-primary: #FFF8F0;
+}
+
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: #6A4E42;
+}
+
+[data-theme="light"] {
+
+}
+
+[data-theme="dark"] {
+  .drawer-bg {
+    background-color: #584B41;
+  }
+}
+
 html,
 body {
   line-height: 1.6;

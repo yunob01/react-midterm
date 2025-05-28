@@ -18,7 +18,7 @@ function CartSummary() {
         <div>
             <div
                 onClick={toggleModal}
-                className="inline-block absolute top-8 right-2 md:right-6 cursor-pointer "
+                className="inline-block top-8 right-2 md:right-6 cursor-pointer "
             >
                 <div className="flex flex-col items-center justify-center text-center">
                     <div className="indicator">
