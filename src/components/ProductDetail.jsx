@@ -28,7 +28,7 @@ const ProductDetail = ({ product }) => {
           <img
             src={product.image}
             alt={product.name}
-            className="w-full max-w-xs sm:max-w-sm lg:w-[360px] h-auto object-cover shadow-md"
+            className="w-full max-w-xs sm:max-w-sm lg:w-[360px] h-auto object-cover shadow-md rounded-md"
           />
 
           <div className="flex flex-col items-start w-full max-w-xs sm:max-w-sm lg:max-w-none lg:w-full">
@@ -72,7 +72,7 @@ const ProductDetail = ({ product }) => {
           <img
             src={product.image}
             alt={product.vinyl.name}
-            className="w-[120px] sm:w-[160px] h-auto object-cover shadow-md"
+            className="w-[120px] sm:w-[160px] h-auto object-cover shadow-md rounded-md"
           />
           <div className="space-y-2 max-w-xl">
             <h4 className="text-lg sm:text-xl font-semibold">{product.name}</h4>
@@ -86,7 +86,7 @@ const ProductDetail = ({ product }) => {
           <img
             src={product.vinyl.image}
             alt={product.vinyl.name}
-            className="w-[120px] sm:w-[160px] h-auto object-cover shadow-md"
+            className="w-[120px] sm:w-[160px] h-auto object-cover shadow-md rounded-md"
           />
           <div className="space-y-2 max-w-xl">
             <h4 className="text-lg sm:text-xl font-semibold">{product.vinyl.name}</h4>

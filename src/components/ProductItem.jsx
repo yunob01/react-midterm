@@ -7,7 +7,7 @@ function ProductItem({ product }) {
                 <Link to={`/product/${product.id}`} className="flex flex-col items-center">
                     <div className="relative">
                         <img
-                            className="w-full max-w-[280px] md:max-w-[240px] sm:max-w-[200px] object-cover"
+                            className="w-full max-w-[280px] md:max-w-[240px] sm:max-w-[200px] object-cover rounded-lg"
                             src={product.image}
                             alt={product.name}
                         />

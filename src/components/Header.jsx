@@ -4,9 +4,9 @@ import SetColorMode from "@/components/SetColorMode";
 
 export default function Header() {
     return (
-        <div className="flex justify-between items-center px-4 py-2 relative">
+        <div>
             <NavBar />
-            <div className="flex items-start space-x-4">
+            <div className="absolute right-8 top-8 grid grid-cols-2 gap-0 w-[4rem] md:w-[7rem]">
                 <SetColorMode />
                 <CartSummary />
             </div>
