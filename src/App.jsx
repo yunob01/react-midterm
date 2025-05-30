@@ -8,6 +8,10 @@ import Culture from '@/pages/Culture';
 
 import store from '@/redux/store';
 
+import { feedProducts } from '@/api/fireStore';
+
+feedProducts();
+
 function App() {
   return (
     <Provider store={store}>
