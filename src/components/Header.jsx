@@ -1,4 +1,4 @@
-import NavBar from "@/components/NavBar";
+import NavBar from "@/components/NavBar.jsx";
 import CartSummary from "@/components/CartSummary";
 import SetColorMode from "@/components/SetColorMode";
 
