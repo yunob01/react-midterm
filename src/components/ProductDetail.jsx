@@ -10,15 +10,15 @@ const ProductDetail = ({ product }) => {
 
   const [searchParams] = useSearchParams();
   const [qty, setQty] = useState(product.stock > 0 ? 1 : 0);
-useEffect(() => {
-  const qtyFromBasket = searchParams.get('qtyFromBasket');
-  let parsedQty = qtyFromBasket ? Number(qtyFromBasket) : (product.stock > 0 ? 1 : 0);
+  useEffect(() => {
+    const qtyFromBasket = searchParams.get('qtyFromBasket');
+    let parsedQty = qtyFromBasket ? Number(qtyFromBasket) : (product.stock > 0 ? 1 : 0);
 
-  if (isNaN(parsedQty) || parsedQty < 0) parsedQty = 0;
-  if (parsedQty > product.stock) parsedQty = product.stock;
+    if (isNaN(parsedQty) || parsedQty < 0) parsedQty = 0;
+    if (parsedQty > product.stock) parsedQty = product.stock;
 
-  setQty(parsedQty);
-}, [searchParams, product.stock]);
+    setQty(parsedQty);
+  }, [searchParams, product.stock]);
 
 
   const [isPlaying, setIsPlaying] = useState(false);
@@ -43,7 +43,7 @@ useEffect(() => {
   };
 
   return (
-    <div className="flex justify-center px-4 sm:px-12 lg:px-24 min-h-screen font-serif text-[#6A4E42]">
+    <div className="flex justify-center px-4 sm:px-12 lg:px-24 min-h-screen font-serif text-primary">
       <div className="w-full max-w-4xl mx-auto px-4">
         <div className="flex flex-col md:flex-row items-start justify-center gap-10 lg:gap-20 py-16">
           <img
@@ -53,20 +53,20 @@ useEffect(() => {
           />
 
           <div className="flex flex-col w-full md:w-1/2 max-w-[360px] mx-auto md:mx-0">
-            <p className="text-sm font-sans text-[#A26E57]">{product.category}</p>
+            <p className="text-sm font-sans text-secondary-text">{product.category}</p>
             <h2 className="text-3xl sm:text-4xl font-semibold pt-2">{product.name}</h2>
             <p className="text-sm leading-relaxed pt-2">{product.description}</p>
 
-            <p className="text-sm font-sans text-[#A26E57] pt-6 pb-2">Price</p>
+            <p className="text-sm font-sans text-secondary-text pt-6 pb-2">Price</p>
             <span className="text-sm font-semibold">${product.price.toFixed(2)}</span>
 
             <div className="flex flex-col items-start pt-4">
-              <p className="text-sm font-sans text-[#A26E57] pb-2">Quantity</p>
+              <p className="text-sm font-sans text-secondary-text pb-2">Quantity</p>
               <select
                 id="quantity"
                 value={qty}
                 onChange={(e) => setQty(Number(e.target.value))}
-                className="border rounded px-3 py-1 bg-white"
+                className="border rounded px-3 py-1 bg-content-text text-primary"
               >
                 {[...Array(product.stock).keys()].map((x) => (
                   <option key={x + 1} value={x + 1}>
@@ -77,7 +77,7 @@ useEffect(() => {
             </div>
 
             <div className="pt-4">
-              <p className="text-sm font-sans text-[#A26E57]">Total</p>
+              <p className="text-sm font-sans text-secondary-text">Total</p>
               <span className="text-lg font-semibold">${(product.price * qty).toFixed(2)}</span>
             </div>
 
@@ -98,7 +98,7 @@ useEffect(() => {
           />
           <div className="space-y-2 max-w-md sm:text-left text-center">
             <h4 className="text-lg sm:text-xl font-semibold">{product.vinyl.name}</h4>
-            <p className="text-sm text-[#A26E57] leading-relaxed font-sans">{product.vinyl.description}</p>
+            <p className="text-sm text-secondary-text leading-relaxed font-sans">{product.vinyl.description}</p>
           </div>
         </div>
 

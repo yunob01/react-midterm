@@ -55,7 +55,7 @@ function ProductList() {
                                 alt={`${category} icon`}
                                 className="w-auto h-12 sm:h-16 mb-2"
                             />
-                            <span className="text-[#6A4E42] font-serif text-sm sm:text-base font-semibold">
+                            <span className="text-primary font-serif text-sm sm:text-base font-semibold">
                                 {category}
                             </span>
                         </button>

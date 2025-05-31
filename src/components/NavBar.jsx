@@ -41,8 +41,13 @@ export default function NavBar() {
             <img
               src="/images/LOGO_VinylRoasts.png"
               alt="Logo"
-              className="h-auto w-16 sm:w-20 transition-transform duration-500 hover:rotate-[360deg]"
+              className=" dark:hidden h-auto w-16 sm:w-20 transition-transform duration-500 hover:rotate-[360deg]"
             />
+            {/* <img
+              src="/images/LOGO_VinylRoasts_2.png"
+              alt="Logo"
+              className="hidden dark:block h-auto w-16 sm:w-20 transition-transform duration-500 hover:rotate-[360deg]"
+            /> */}
 
           </NavLink>
 
@@ -66,8 +71,8 @@ export default function NavBar() {
                 onClick={() => setIsOpen(false)}
                 className={({ isActive }) =>
                   `transition duration-300 pb-1 border-b-2 ${isActive
-                    ? "text-[#6A4E42] border-[#6A4E42]"
-                    : "text-[#6A4E42] opacity-60 border-transparent hover:border-[#6A4E42]"
+                    ? "text-primary border-primary"
+                    : "text-primary opacity-60 border-transparent hover:border-primary"
                   }`
                 }
               >

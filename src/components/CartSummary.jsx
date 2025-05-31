@@ -23,7 +23,7 @@ function CartSummary() {
                 <div className="flex flex-col items-center justify-center text-center">
                     <div className="indicator">
                         {count > 0 && (
-                            <span className="indicator-item badge badge-primary text-white">
+                            <span className="indicator-item badge badge-primary text-content-text">
                                 {count}
                             </span>
                         )}
@@ -32,7 +32,7 @@ function CartSummary() {
                             className="w-8 h-auto sm:w-10 text-current group-hover:scale-105 transition-transform"
                         />
                     </div>
-                    <p className="text-xs text-[#A26E57] mt-1">Shopping Cart</p>
+                    <p className="text-xs text-secondary-text mt-1">Shopping Cart</p>
                 </div>
             </div>
 
