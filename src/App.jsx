@@ -6,7 +6,8 @@ import Menu from '@/pages/Menu';
 import Product from '@/pages/Product';
 import Culture from '@/pages/Culture';
 
-import store from '@/redux/store';
+import { persistor, store } from '@/redux/store';
+import { PersistGate } from 'redux-persist/integration/react';
 
 // import { feedProducts } from '@/api/fireStore';
 
@@ -15,14 +16,16 @@ import store from '@/redux/store';
 function App() {
   return (
     <Provider store={store}>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/menu" element={<Menu />} />
-          <Route path="/product/:productId" element={<Product />} />
-          <Route path="/culture" element={<Culture />} />
-        </Routes>
-      </BrowserRouter>
+      <PersistGate loading={null} persistor={persistor}>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/menu" element={<Menu />} />
+            <Route path="/product/:productId" element={<Product />} />
+            <Route path="/culture" element={<Culture />} />
+          </Routes>
+        </BrowserRouter>
+      </PersistGate>
     </Provider>
   );
 }

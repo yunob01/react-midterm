@@ -1,24 +1,45 @@
-import React, { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
+import { useSearchParams } from 'react-router';
 
 import AddToCart from "@/components/AddToCart";
 import BuyNow from "@/components/BuyNow";
 import NowSpinning from "@/components/NowSpinning";
+import VinylModal from "@/components/VinylModal";
 
 const ProductDetail = ({ product }) => {
+
+  const [searchParams] = useSearchParams();
   const [qty, setQty] = useState(product.stock > 0 ? 1 : 0);
+useEffect(() => {
+  const qtyFromBasket = searchParams.get('qtyFromBasket');
+  let parsedQty = qtyFromBasket ? Number(qtyFromBasket) : (product.stock > 0 ? 1 : 0);
+
+  if (isNaN(parsedQty) || parsedQty < 0) parsedQty = 0;
+  if (parsedQty > product.stock) parsedQty = product.stock;
+
+  setQty(parsedQty);
+}, [searchParams, product.stock]);
+
+
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);
+  const [showVinylModal, setShowVinylModal] = useState(false);
 
   const handleSpinClick = () => {
-    if (audioRef.current) {
-      if (isPlaying) {
-        audioRef.current.pause();
-        setIsPlaying(false);
-      } else {
-        audioRef.current.play();
-        setIsPlaying(true);
-      }
+    setShowVinylModal(true);
+    if (audioRef.current && !isPlaying) {
+      audioRef.current.play();
+      setIsPlaying(true);
     }
+  };
+
+  const handleCloseModal = () => {
+    setShowVinylModal(false);
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
+    }
+    setIsPlaying(false);
   };
 
   return (
@@ -43,7 +64,7 @@ const ProductDetail = ({ product }) => {
               <p className="text-sm font-sans text-[#A26E57] pb-2">Quantity</p>
               <select
                 id="quantity"
-                defaultValue={product.stock > 0 ? 1 : 0}
+                value={qty}
                 onChange={(e) => setQty(Number(e.target.value))}
                 className="border rounded px-3 py-1 bg-white"
               >
@@ -84,6 +105,15 @@ const ProductDetail = ({ product }) => {
         <div className="flex flex-col items-center justify-center pt-10 mb-40">
           <NowSpinning onClick={handleSpinClick} isPlaying={isPlaying} />
           <audio ref={audioRef} src={product.vinyl.audio} />
+          {showVinylModal && (
+            <VinylModal
+              audioRef={audioRef}
+              isPlaying={isPlaying}
+              setIsPlaying={setIsPlaying}
+              onClose={handleCloseModal}
+              vinyl={product.vinyl}
+            />
+          )}
         </div>
       </div>
     </div>

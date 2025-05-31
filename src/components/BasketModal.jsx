@@ -23,7 +23,7 @@ export default function BasketModal({ isOpen, toggleDrawer }) {
                />
 
                <motion.div
-                  className="fixed top-0 right-0 h-full w-full sm:w-[380px] bg-[#6e4b3a] p-6 shadow-lg z-40 text-[#FFF8F0] overflow-y-auto"
+                  className="fixed top-0 right-0 h-full w-full sm:w-[380px] bg-[#4B3F36] p-6 shadow-lg z-40 text-[#FFF8F0] overflow-y-auto"
                   initial={{ x: "100%" }}
                   animate={{ x: 0 }}
                   exit={{ x: "100%" }}
