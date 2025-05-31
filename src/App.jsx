@@ -8,9 +8,9 @@ import Culture from '@/pages/Culture';
 
 import store from '@/redux/store';
 
-import { feedProducts } from '@/api/fireStore';
+// import { feedProducts } from '@/api/fireStore';
 
-feedProducts();
+// feedProducts();
 
 function App() {
   return (
