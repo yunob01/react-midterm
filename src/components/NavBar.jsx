@@ -40,15 +40,14 @@ export default function NavBar() {
           <NavLink to="/" className="flex justify-center sm:justify-start">
             <img
               src="/images/LOGO_VinylRoasts.png"
-              alt="Logo"
-              className=" dark:hidden h-auto w-16 sm:w-20 transition-transform duration-500 hover:rotate-[360deg]"
+              alt="Light Logo"
+              className="logo logo-light h-auto w-16 sm:w-20 transition-transform duration-500 hover:rotate-[360deg]"
             />
-            {/* <img
+            <img
               src="/images/LOGO_VinylRoasts_2.png"
-              alt="Logo"
-              className="hidden dark:block h-auto w-16 sm:w-20 transition-transform duration-500 hover:rotate-[360deg]"
-            /> */}
-
+              alt="Dark Logo"
+              className="logo logo-dark h-auto w-16 sm:w-20 transition-transform duration-500 hover:rotate-[360deg]"
+            />
           </NavLink>
 
           {/* NavBar */}

@@ -20,31 +20,6 @@ body {
 :root {
   --color-primary: #6A4E42;
   --color-background: #F4EBD9;
-  --color-secondarytext: #A26E57;
-  --color-contenttext: #FFF8F0;
-  --color-contentbg: #4B3F36;
-}
-
-/* dark theme */
-[data-theme="dark"] {
-  --color-primary: #FFF8F0;
-  --color-background: #584B41;
-  --color-secondarytext: #D3B8A3;
-  --color-contenttext: #4B3F36;
-  --color-contentbg: #C6B89B;
-}
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* 字體引入 */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Noto+Sans:wght@400;700&display=swap');
-
-/* light theme */
-:root {
-  --color-primary: #6A4E42;
-  --color-background: #F4EBD9;
   --color-secondary-text: #A26E57;
   --color-content-text: #FFF8F0;
   --color-content-bg: #4B3F36;
@@ -80,6 +55,20 @@ body {
 }
 .hover\:text-content-text:hover {
   color: var(--color-content-text);
+}
+
+.logo-light {
+  display: block;
+}
+.logo-dark {
+  display: none;
+}
+
+[data-theme="dark"] .logo-light {
+  display: none;
+}
+[data-theme="dark"] .logo-dark {
+  display: block;
 }
 
 .main-layout {
