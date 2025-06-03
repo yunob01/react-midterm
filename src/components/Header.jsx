@@ -6,7 +6,7 @@ export default function Header() {
     return (
         <div>
             <NavBar />
-            <div className="absolute right-8 top-8 grid grid-cols-2 w-[4rem] md:w-[7rem]">
+            <div className="absolute right-8 top-8 grid grid-cols-3 w-[4rem] md:w-[7rem]">
                 <SetColorMode />
                 <CartSummary />
             </div>
