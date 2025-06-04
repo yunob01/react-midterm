@@ -23,7 +23,7 @@ export default function BasketModal({ isOpen, toggleDrawer }) {
                />
 
                <motion.div
-                  className="fixed top-0 right-0 h-full w-full sm:w-[380px] bg-[#6e4b3a] p-6 shadow-lg z-40 text-[#FFF8F0] overflow-y-auto"
+                  className="fixed top-0 right-0 h-full w-full sm:w-[380px] bg-content-bg p-6 shadow-lg z-40 text-content-text overflow-y-auto"
                   initial={{ x: "100%" }}
                   animate={{ x: 0 }}
                   exit={{ x: "100%" }}
@@ -34,7 +34,7 @@ export default function BasketModal({ isOpen, toggleDrawer }) {
 
                      <button
                         onClick={() => toggleDrawer(false)}
-                        className="block sm:hidden text-[#FFF8F0] hover:opacity-100 opacity-70 focus:outline-none focus:ring-0"
+                        className="block sm:hidden text-content-text hover:opacity-100 opacity-70 focus:outline-none focus:ring-0"
                      >
                         <X size={24} strokeWidth={2} />
                      </button>
@@ -79,7 +79,7 @@ export default function BasketModal({ isOpen, toggleDrawer }) {
                                              })
                                           )
                                        }
-                                       className="border rounded px-2 py-1 bg-white text-[#6A4E42] font-serif"
+                                       className="border rounded px-2 py-1 bg-content-text text-primary font-serif"
                                     >
                                        {[...Array(item.countInStock).keys()].map((x) => (
                                           <option key={x + 1} value={x + 1}>
@@ -95,7 +95,7 @@ export default function BasketModal({ isOpen, toggleDrawer }) {
 
                               <button
                                  onClick={() => dispatch(removeCartItems(item.id))}
-                                 className="text-right text-[#FFF8F0] opacity-60 hover:opacity-100 focus:outline-none focus:ring-0"
+                                 className="text-right text-content-text opacity-60 hover:opacity-100 focus:outline-none focus:ring-0"
                               >
                                  <X size={18} strokeWidth={2} />
                               </button>
@@ -111,7 +111,7 @@ export default function BasketModal({ isOpen, toggleDrawer }) {
                      </div>
 
                      <div className="flex justify-center mt-4">
-                        <button className="font-bold font-serif bg-[#FFF8F0] text-[#6A4E42] text-sm sm:text-base px-6 py-2 rounded-[16px] border border-[#FFF8F0] transition hover:bg-transparent hover:text-[#FFF8F0]">
+                        <button className="font-bold font-serif bg-content-text text-primary text-sm sm:text-base px-6 py-2 rounded-[16px] border border-content-text transition hover:bg-transparent hover:text-content-text">
                            Check Out
                         </button>
                      </div>

@@ -15,13 +15,13 @@ const ContinueReading = () => {
     ];
   
     return (
-      <section className="bg-[#5c3d2e] text-[#4B3F36] px-16 py-20 font-serif">
-        <h2 className="text-xl sm:text-2xl font-semibold mb-6 text-[#F2F2F2] italic">Continue Reading</h2>
+      <section className="bg-content-bg text-primary px-16 py-20 font-serif">
+        <h2 className="text-xl sm:text-2xl font-semibold mb-6 text-content-text italic">Continue Reading</h2>
         <div className="grid md:grid-cols-3 gap-10">
           {items.map((item, index) => (
             <div
               key={index}
-              className="bg-[#f3ebe1] rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-xl"
+              className="bg-background rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-xl"
             >
               <img
                 src={item.img}
@@ -36,7 +36,7 @@ const ContinueReading = () => {
                   <br />
                   {item.title.split(':')[1]}
                 </h3>
-                <a href="#" className="text-[#5c3d2e] font-bold text-sm">→</a>
+                <a href="#" className="text-primary font-bold text-sm">→</a>
               </div>
             </div>
           ))}

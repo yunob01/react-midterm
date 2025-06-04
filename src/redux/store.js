@@ -46,5 +46,5 @@ export const store = configureStore({
     }),
 });
 
-// 匯出 persist 控制器
+//  export store to global
 export const persistor = persistStore(store);

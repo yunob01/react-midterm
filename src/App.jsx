@@ -41,8 +41,26 @@ function App() {
 
       </Provider>
     </QueryClientProvider>
-      
-  );
+        );
 }
 
 export default App;
+
+// import { feedProducts } from '@/api/fireStore';
+
+// feedProducts();
+
+// function App() {
+//   return (
+//     <Provider store={store}>
+//       <PersistGate loading={null} persistor={persistor}>
+//         <BrowserRouter>
+//           <Routes>
+//             <Route path="/" element={<Home />} />
+//             <Route path="/menu" element={<Menu />} />
+//             <Route path="/product/:productId" element={<Product />} />
+//             <Route path="/culture" element={<Culture />} />
+//           </Routes>
+//         </BrowserRouter>
+//       </PersistGate>
+//     </Provider>

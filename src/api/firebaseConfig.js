@@ -13,12 +13,12 @@ const firebaseConfig = {
   appId: import.meta.env.VITE_FIREBASE_APPID,
   measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENTID,
 };              
+                                                                                
 
 const app_length = getApps().length > 0;
 
 // Initialize Firebase
 const app = app_length ? getApp() : initializeApp(firebaseConfig);
-
 const analytics = getAnalytics(app);
 
 // REFERENCE DB
@@ -30,4 +30,4 @@ const auth = getAuth(app);
 export { db, auth, analytics };
 
 
-                                                                  
+                                                                

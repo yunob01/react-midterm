@@ -26,7 +26,7 @@ function Footer() {
                     <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
                     <ul className="space-y-2 font-sans text-xs">
                         <li className="flex items-start gap-2">
-                            <MapPin size={18} className="mt-1" />
+                            <MapPin size={18}/>
                             <span>No. 123, Music Road, Da’an District, Taipei City, Taiwan</span>
                         </li>
                         <li className="flex items-center gap-2">

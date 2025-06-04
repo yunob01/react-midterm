@@ -26,7 +26,7 @@
             "name":  "Norah Jones – Come Away With Me",
             "description": "A Grammy-winning debut blending jazz, pop, and soul — Norah’s smoky vocals offer comfort like a warm cup.",
             "image":"/images/VINYI_Norah Jones – Come Away With Me.jpg",
-            "audio":"/audio/Miles Davis - Blue In Green.mp3"
+            "audio":"/audio/Norah Jones – Come Away With Me.mp3"
         }
     },
     {
@@ -41,7 +41,7 @@
             "name":  "Ella Fitzgerald – Misty Blue",
             "description": "A late-career gem mixing country and jazz — Ella’s emotional range shines with smooth phrasing and vintage charm.",
             "image":"/images/VINYI_Ella Fitzgerald – Misty Blue.jpg",
-            "audio":"/audio/Miles Davis - Blue In Green.mp3"
+            "audio":"/audio/Ella Fitzgerald – Misty Blue.mp3"
         }
     },
     {
@@ -56,7 +56,7 @@
             "name": "Frank Sinatra – Fly Me to the Moon",
             "description": "From the album “It Might as Well Be Swing”, Sinatra’s velvet voice and Basie’s big band bring timeless sophistication.",
             "image":"/images/VINYI_Frank Sinatra – Fly Me to the Moon.jpg",
-            "audio":"/audio/Miles Davis - Blue In Green.mp3"
+            "audio":"/audio/Frank Sinatra – Fly Me to the Moon.mp3"
         }
     },
     {
@@ -71,7 +71,7 @@
             "name": "Tycho – Awake",
             "description": "A chillwave essential — Tycho’s blend of ambient guitar and electronic textures paints a serene, modern landscape.",
             "image":"/images/VINYI_Tycho – Awake.jpg",
-            "audio":"/audio/Miles Davis - Blue In Green.mp3"
+            "audio":"/audio/Tycho – Awake.mp3"
         }
     },
     {
@@ -86,7 +86,7 @@
             "name":  "Bonobo – Black Sands",
             "description":  "A downtempo classic, merging trip-hop and jazz with lush orchestration — perfect for introspective moods.",
             "image":"/images/VINYI_Bonobo – Black Sands.jpg",
-            "audio":"/audio/Miles Davis - Blue In Green.mp3"
+            "audio":"/audio/Bonobo – Black Sands.mp3"
         }
     },
     {
@@ -101,7 +101,7 @@
             "name": "John Mayer – Continuum",
             "description": "A fusion of blues and soul-infused pop — Mayer explores vulnerability with crisp guitar work and honest lyricism.",
             "image":"/images/VINYI_John Mayer – Continuum.jpg",
-            "audio":"/audio/Miles Davis - Blue In Green.mp3"
+            "audio":"/audio/John Mayer – Continuum.mp3"
         }
     },
     {
@@ -116,7 +116,7 @@
             "name": "Lana Del Rey – Norman Fucking Rockwell!",
             "description": "A melancholic, cinematic pop album soaked in vintage Californian vibes — introspective, poetic, and bold.",
             "image":"/images/VINYI_Lana Del Rey – Norman Fucking Rockwell!.jpg",
-            "audio":"/audio/Miles Davis - Blue In Green.mp3"
+            "audio":"/audio/Lana Del Rey – Norman Fucking Rockwell!.mp3"
         }
     },
     {
@@ -131,7 +131,7 @@
             "name":  "Chet Baker – Chet Baker Sings", 
             "description": "A soft, romantic West Coast jazz record filled with longing — Baker’s delicate trumpet and vocals are timeless.",
             "image":"/images/VINYI_Chet Baker – Chet Baker Sings.jpg",
-            "audio":"/audio/Miles Davis - Blue In Green.mp3"
+            "audio":"/audio/Chet Baker – Chet Baker Sings.mp3"
         }
     },
     {
@@ -146,7 +146,7 @@
             "name": "Ryuichi Sakamoto – Thousand Knives",
             "description": "An avant-garde fusion of jazz, electronica, and traditional Japanese tones — experimental and elegant.",
             "image":"/images/VINYI_Ryuichi Sakamoto – Thousand Knives.jpg",
-            "audio":"/audio/Miles Davis - Blue In Green.mp3"
+            "audio":"/audio/Ryuichi Sakamoto – Thousand Knives.mp3"
         }
     },
     {
@@ -161,7 +161,7 @@
             "name": "Jimi Hendrix – Electric Ladyland",
             "description":"Psychedelic rock and blues guitar mastery — Hendrix melts boundaries like chocolate in heat.", 
             "image":"/images/VINYI_Jimi Hendrix – Electric Ladyland.jpg",
-            "audio":"/audio/Miles Davis - Blue In Green.mp3"
+            "audio":"/audio/Jimi Hendrix – Electric Ladyland.mp3"
         }
     },
     {
@@ -176,7 +176,7 @@
             "name": "The Beatles – Revolver",
             "description": "A pop-rock masterpiece with inventive melodies and upbeat energy — citrusy, vibrant, and sharp.",
             "image":"/images/VINYI_The Beatles – Revolver.jpg",
-            "audio":"/audio/Miles Davis - Blue In Green.mp3"
+            "audio":"/audio/The Beatles – Revolver.mp3"
         }
     },
     {
@@ -191,7 +191,7 @@
             "name": "Stacey Kent – Breakfast on the Morning Tram",
             "description":  "A smooth blend of modern jazz and French café vibes — light and poetic, perfect for afternoon tea.",
             "image":"/images/VINYI_Stacey Kent – Breakfast on the Morning Tram.jpg",
-            "audio":"/audio/Miles Davis - Blue In Green.mp3"
+            "audio":"/audio/Stacey Kent – Breakfast on the Morning Tram.mp3"
         }
     },
     {
@@ -206,7 +206,7 @@
             "name":  "Taylor Swift – Lover",
             "description": "A vibrant, colorful pop record full of sweetness and romantic highs — youthful and melodic.",
             "image": "/images/VINYI_Taylor Swift – Lover.png",
-            "audio":"/audio/Miles Davis - Blue In Green.mp3"
+            "audio":"/audio/Taylor Swift – Lover.mp3"
         }
     },
     {
@@ -221,7 +221,7 @@
             "name": "Diana Krall – The Look of Love",
             "description": "Norah Jones’ Come Away with Me is a landmark debut album that introduced her signature blend of jazz, folk, country, and pop. Here’s why it stands out.",
             "image": "/images/VINYI_Diana Krall – The Look of Love.jpg",
-            "audio":"/audio/Miles Davis - Blue In Green.mp3"
+            "audio":"/audio/Diana Krall – The Look of Love.mp3"
         }
     },
     {
@@ -236,7 +236,7 @@
             "name": "Amy Winehouse – Back to Black",
             "description": "A bold, soulful throwback to Motown and jazz — Amy’s voice carries heartbreak and heat with raw, vintage power.",
             "image": "/images/VINYI_Amy Winehouse – Back to Black.jpg",
-            "audio":"/audio/Miles Davis - Blue In Green.mp3"
+            "audio":"/audio/Amy Winehouse – Back to Black.mp3"
         }
     },
     {
@@ -251,7 +251,7 @@
             "name":  "Bill Evans – Waltz for Debby",
             "description": "A graceful, introspective jazz trio record — warm and delicate, ideal for quiet moments and slow mornings.",
             "image": "/images/VINYI_Bill Evans – Waltz for Debby.jpg",
-            "audio":"/audio/Miles Davis - Blue In Green.mp3"
+            "audio":"/audio/Bill Evans – Waltz for Debby.mp3"
         }
     }
 ]
