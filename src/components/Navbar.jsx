@@ -4,14 +4,13 @@ import HamMenu from "@/components/HamMenu";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
-  const navRef = useRef(null); 
-  const menuButtonRef = useRef(null); 
+  const navRef = useRef(null);
+  const menuButtonRef = useRef(null);
 
   const navBarContent = [
     { to: "/", label: "Home" },
     { to: "/menu", label: "Menu" },
     { to: "/culture", label: "Culture" },
-    { to: "/contact", label: "Contact" },
   ];
 
   useEffect(() => {
@@ -39,12 +38,16 @@ export default function NavBar() {
         <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-10 w-full">
           {/* Logo */}
           <NavLink to="/" className="flex justify-center sm:justify-start">
-          <img
-  src="/images/LOGO_VinylRoasts.png"
-  alt="Logo"
-  className="h-auto w-16 sm:w-20 transition-transform duration-500 hover:rotate-[360deg]"
-/>
-
+            <img
+              src="/images/LOGO_VinylRoasts.png"
+              alt="Light Logo"
+              className="logo logo-light h-auto w-16 sm:w-20 transition-transform duration-500 hover:rotate-[360deg]"
+            />
+            <img
+              src="/images/LOGO_VinylRoasts_2.png"
+              alt="Dark Logo"
+              className="logo logo-dark h-auto w-16 sm:w-20 transition-transform duration-500 hover:rotate-[360deg]"
+            />
           </NavLink>
 
           {/* NavBar */}
@@ -66,10 +69,9 @@ export default function NavBar() {
                 to={to}
                 onClick={() => setIsOpen(false)}
                 className={({ isActive }) =>
-                  `transition duration-300 pb-1 border-b-2 ${
-                    isActive
-                      ? "text-[#6A4E42] border-[#6A4E42]"
-                      : "text-[#6A4E42] opacity-60 border-transparent hover:border-[#6A4E42]"
+                  `transition duration-300 pb-1 border-b-2 ${isActive
+                    ? "text-primary border-primary"
+                    : "text-primary opacity-60 border-transparent hover:border-primary"
                   }`
                 }
               >

@@ -3,16 +3,7 @@
 @tailwind utilities;
 
 @import "tailwindcss";
-@source "./pages";
-@source "./components";
 @plugin "daisyui";
-@plugin "daisyui/theme" {
-  name: "mytheme";
-  default: true; 
-  prefersdark: false;
-  color-scheme: light;
-  --color-primary: #6A4E42;
-}
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Noto+Sans:wght@400;700&display=swap');
 
 html,
@@ -21,6 +12,64 @@ body {
   background-color: #F4EBD9;
 }
 
+[data-theme="dark"] body {
+  background-color: #584B41;
+}
+
+/* light theme */
+:root {
+  --color-primary: #6A4E42;
+  --color-background: #F4EBD9;
+  --color-secondary-text: #A26E57;
+  --color-content-text: #FFF8F0;
+  --color-content-bg: #4B3F36;
+}
+
+/* dark theme (data-theme 設定時會被套用) */
+[data-theme="dark"] {
+  --color-primary: #FFF8F0;
+  --color-background: #584B41;
+  --color-secondary-text: #D3B8A3;
+  --color-content-text: #4B3F36;
+  --color-content-bg: #C6B89B;
+}
+
+/* 自訂 class */
+.text-primary {
+  color: var(--color-primary);
+}
+.text-content-text {
+  color: var(--color-content-text);
+}
+.text-secondary-text {
+  color: var(--color-secondary-text);
+}
+.bg-content-bg {
+  background-color: var(--color-content-bg);
+}
+.bg-content-text {
+  background-color: var(--color-content-text);
+}
+.bg-background {
+  background-color: var(--color-background);
+}
+.hover\:text-content-text:hover {
+  color: var(--color-content-text);
+}
+
+.logo-light {
+  display: block;
+}
+.logo-dark {
+  display: none;
+}
+
+[data-theme="dark"] .logo-light {
+  display: none;
+}
+[data-theme="dark"] .logo-dark {
+  display: block;
+}
 
 .main-layout {
   display: grid;
