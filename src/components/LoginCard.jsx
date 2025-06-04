@@ -5,10 +5,12 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router";
 import { useState } from "react";
 import { FormInput, FormError, AuthFormLayout } from "@/components/common";
+import { useNavigate } from "react-router-dom"; 
 
 
 const LoginCard = ({ redirect }) => {
     const dispatch = useDispatch();
+    const navigate = useNavigate();
     const { mutate, isLoading, isError, error } = useSignInWithEmailPassword();
     const isRemember = useSelector(selectIsRemember);
 
@@ -25,10 +27,18 @@ const LoginCard = ({ redirect }) => {
         }));
     };
 
-    const onFinish =(e) => {
+    const onFinish = (e) => {
         e.preventDefault();
-        mutate({ ...formData, redirect });
+        mutate(
+            { ...formData, redirect },
+            {
+            onSuccess: () => {
+                navigate("/home"); 
+            },
+            }
+        );
     };
+
 
     return (
         <AuthFormLayout onSubmit={onFinish}>

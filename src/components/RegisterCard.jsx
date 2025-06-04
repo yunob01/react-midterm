@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import { Mail, Lock, User } from "lucide-react";
 import { FormInput, FormError, AuthFormLayout } from "@/components/common";
 import { useRegisterWithEmailPassword } from "@/react-query";
@@ -11,7 +11,7 @@ const RegisterCard = ({ redirect }) => {
         username: "",
         email: "",
         password: "",
-        ConfirmPassword: "",
+        confirmPassword: "",
         agreement: false,
     });
 
@@ -25,7 +25,7 @@ const RegisterCard = ({ redirect }) => {
 
     const onFinish = (e) => {
         e.preventDefault();
-        if (formData.password !== formData.rePassword) {
+        if (formData.password !== formData.confirmPassword) {
         alert("Passwords do not match");
         return;
         }
@@ -66,7 +66,7 @@ const RegisterCard = ({ redirect }) => {
             onChange={onChange}
         />
         <FormInput
-            label="Confirm Password"
+            label="confirmPassword"
             name="confirmPassword"
             type="password"
             placeholder="Confirm Password"
@@ -75,10 +75,11 @@ const RegisterCard = ({ redirect }) => {
             onChange={onChange}
         />
         <FormInput
-            label="I have read the agreement"
+            label="I have known the agreement"
             name="agreement"
             type="checkbox"
             value={formData.agreement}
+            checked={formData.agreement}
             onChange={onChange}
         />
         <button type="submit" className="btn btn-primary w-full" disabled={isLoading}>
