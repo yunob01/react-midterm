@@ -4,18 +4,14 @@ import ProfileCard from '@/components/ProfileCard'
 import Footer from '@/components/Footer'
 
 function Profile() {
-   const title = "Profile";
-
+  const title = "Profile";
   return (
-    <div className="main-layout min-h-screen">
-      <div className="container mx-auto ">
+    <div className="main-layout">
+      <Header />
+      <div className="content">
         <Helmet>
           <title>{title}</title>
         </Helmet>
-        <Header
-          title={title}
-          slogan="The best place to buy your favorite products"
-        />
         <ProfileCard />
       </div>
       <Footer />

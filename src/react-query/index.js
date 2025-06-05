@@ -16,7 +16,7 @@ export const useSignInWithEmailPassword = () => {
       if (redirect) {
         navigate(redirect);
       } else {
-        navigate("/");
+        navigate("/home");
       }
     },
   });
@@ -34,7 +34,7 @@ export const useRegisterWithEmailPassword = () => {
       if (redirect) {
         navigate(redirect);
       } else {
-        navigate("/");
+        navigate("/home");
       }
     },
   });

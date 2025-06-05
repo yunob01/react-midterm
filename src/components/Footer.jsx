@@ -12,7 +12,7 @@ function Footer() {
         >
             <div className="flex flex-wrap justify-between gap-8 mb-16">
                 {/* Logo */}
-                <NavLink to="/" className="flex flex-col justify-center items-center">
+                <NavLink to="/home" className="flex flex-col justify-center items-center">
                     <img
                         src="/images/LOGO_VinylRoasts_2.png"
                         alt="Vinyl Roasts Logo"

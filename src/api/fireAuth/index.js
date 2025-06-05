@@ -25,7 +25,7 @@ export const login = async ({ email, password }) => {
   return await signInWithEmailAndPassword(auth, email, password);
 };
 
-export const register = async ({ name, email, password }) => {
+export const register = async ({ username, email, password }) => {
   const userCredential = await createUserWithEmailAndPassword(
     auth,
     email,
@@ -34,7 +34,7 @@ export const register = async ({ name, email, password }) => {
   const user = userCredential?.user;
   const docRef = doc(db, "users", user.uid);
   await setDoc(docRef, {
-    username: name,
+    username: username || "",
   });
 };
 

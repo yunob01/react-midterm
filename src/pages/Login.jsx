@@ -8,17 +8,15 @@ function Login() {
     const title = "Login";
     const [searchParams] = useSearchParams();
     const redirect = searchParams.get("redirect");
-    const redirectPath = redirect ? redirect : "/";
+    const redirectPath = redirect ? redirect : "/home";
 
     return (
-        <div className="main-layout min-h-screen">
-            <div className="container mx-auto">
+        <div className="main-layout">
+            <Header />
+            <div className="content">
                 <Helmet>
                     <title>{title}</title>
                 </Helmet>
-                <Header
-                    title={title}
-                />
                 <LoginCard redirect={redirectPath} />
             </div>
             <Footer />

@@ -1,33 +1,42 @@
-import { useUserInfo, useLogout } from '@/react-query';
+import { useUserInfo, useLogout } from "@/react-query";
 
 const ProfileCard = () => {
-   const { data: userInfo } = useUserInfo();
-   const logout = useLogout();
+  const { data: userInfo } = useUserInfo();
+  const logout = useLogout();
 
-   const handleLogout = () => {
-      logout.mutate();
-   }
+  const handleLogout = () => {
+    logout.mutate();
+  };
 
-   return (
-      <div className="p-6 max-w-sm mx-auto">
-         <h2 className="text-2xl font-bold mb-4">Profile Card</h2>
-         <p className="opacity-80 mb-4">This is a simple profile card component.</p>
-         <p className="opacity-80 mb-4">
-            <strong>Name:</strong> {userInfo?.username || 'N/A'}
-         </p>
-         <p className="opacity-80 mb-4">
-            <strong>Email:</strong> {userInfo?.email || 'N/A'}
-         </p>
-         <p className="opacity-80 mb-4">
-            <strong>UID:</strong> {userInfo?.uid || 'N/A'}
-         </p>
-         <button
-            className="bg-blue-500 text-white px-4 py-2 w-[100%] rounded hover:bg-blue-600 transition duration-200"
-            onClick={handleLogout}
-         >
-            Logout
-         </button>
+  return (
+    <div className="font-serif bg-content-text text-primary px-6 py-10 max-w-md mx-auto shadow-md rounded-xl mb-20">
+      <h2 className="text-2xl sm:text-3xl font-semibold text-center mb-6">Profile</h2>
+
+      <div className="space-y-5 text-sm sm:text-base">
+        <div>
+          <p className="font-sans text-secondary-text text-xs mb-1">Name</p>
+          <p className="">{userInfo?.username || "N/A"}</p>
+        </div>
+        <div>
+          <p className="font-sans text-secondary-text text-xs mb-1">Email</p>
+          <p className="">{userInfo?.email || "N/A"}</p>
+        </div>
+        <div>
+          <p className="font-sans text-secondary-text text-xs mb-1">UID</p>
+          <p className=" break-all">{userInfo?.uid || "N/A"}</p>
+        </div>
       </div>
-   );
-}
+
+      <div className="flex justify-center mt-8">
+        <button
+          onClick={handleLogout}
+          className="bg-primary text-content-text text-sm font-semibold px-6 py-2 rounded-xl border border-primary transition hover:bg-transparent hover:text-primary"
+        >
+          Logout
+        </button>
+      </div>
+    </div>
+  );
+};
+
 export default ProfileCard;

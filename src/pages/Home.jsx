@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import MainVisual from "@/components/MainVisual";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -5,9 +6,13 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import Promotions from "@/components/Promotions";
 
 function Home() {
+  const title = "Vinyl Roasts";
   return (
     <div className="main-layout">
       <Header />
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
       <MainVisual
         title="Vinyl Roasts"
         slogan1="Every sip tells a story, every song rewinds time."

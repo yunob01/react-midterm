@@ -27,7 +27,7 @@ function App() {
           <HelmetProvider>
             <BrowserRouter>
               <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/home" element={<Home />} />
                 <Route path="/menu" element={<Menu />} />
                 <Route path="/product/:productId" element={<Product />} />
                 <Route path="/culture" element={<Culture />} />

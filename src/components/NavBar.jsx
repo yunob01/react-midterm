@@ -8,7 +8,7 @@ export default function NavBar() {
   const menuButtonRef = useRef(null);
 
   const navBarContent = [
-    { to: "/", label: "Home" },
+    { to: "/home", label: "Home" },
     { to: "/menu", label: "Menu" },
     { to: "/culture", label: "Culture" },
   ];
@@ -37,7 +37,7 @@ export default function NavBar() {
         {/* LOGO + NavBar*/}
         <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-10 w-full">
           {/* Logo */}
-          <NavLink to="/" className="flex justify-center sm:justify-start">
+          <NavLink to="/home" className="flex justify-center sm:justify-start">
             <img
               src="/images/LOGO_VinylRoasts.png"
               alt="Light Logo"

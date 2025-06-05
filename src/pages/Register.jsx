@@ -6,20 +6,17 @@ import Footer from '@/components/Footer'
 function Register() {
     const title = "Register";
     return (
-        <div className="main-layout min-h-screen">
-            <div className="container mx-auto">
+        <div className="main-layout">
+            <Header/>
+            <div className="content">
                 <Helmet>
                     <title>{title}</title>
                 </Helmet>
-                <Header
-                    title={title}
-                />
                 <RegisterCard />
             </div>
-            <Footer className="footer" />
+            <Footer />
         </div>
     )
-
 }
 
 export default Register
