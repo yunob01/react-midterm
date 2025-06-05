@@ -20,7 +20,7 @@ export default function UserInfo(props) {
          className="cursor-pointer flex flex-col items-center group"
       >
          <User className="w-8 h-auto sm:w-10 text-current group-hover:scale-105 transition-transform" />
-         <p className="hidden md:block text-[0.5rem] md:text-[0.7rem] opacity-60 mt-[-0.2rem] md:mt-[0.3rem] text-current">
+         <p className="hidden sm:block text-xs text-secondary-text mt-1">
             {userName}
          </p>
       </nav>
