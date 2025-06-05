@@ -9,7 +9,7 @@ import Profile from '@/pages/Profile';
 export default function MainRoutes() {
     return (
         <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route path="products">
                 <Route path="category/:categoryName" element={<Category />} />
                 <Route path="id/:productId" element={<Product />} />
