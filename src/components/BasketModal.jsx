@@ -1,15 +1,15 @@
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { useDispatch, useSelector } from "react-redux";
 import { addCartItems, removeCartItems, selectCartItems } from "@/redux/cartSlice";
 import { X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function BasketModal({ isOpen, toggleDrawer }) {
+   const navigate = useNavigate();
    const dispatch = useDispatch();
    const cartItems = useSelector(selectCartItems);
    const getTotalPrice = () =>
       cartItems.reduce((sum, item) => sum + item.price * item.qty, 0);
-
    return (
       <AnimatePresence>
          {isOpen && (
@@ -111,7 +111,13 @@ export default function BasketModal({ isOpen, toggleDrawer }) {
                      </div>
 
                      <div className="flex justify-center mt-4">
-                        <button className="font-bold font-serif bg-content-text text-primary text-sm sm:text-base px-6 py-2 rounded-[16px] border border-content-text transition hover:bg-transparent hover:text-content-text">
+                        <button
+                           onClick={() => {
+                              toggleDrawer(false); // 關閉購物車抽屜
+                              navigate("/auth/login");  // 導向登入頁
+                           }}
+                           className="font-bold font-serif bg-content-text text-primary text-sm sm:text-base px-6 py-2 rounded-[16px] border border-content-text transition hover:bg-transparent hover:text-content-text"
+                        >
                            Check Out
                         </button>
                      </div>
