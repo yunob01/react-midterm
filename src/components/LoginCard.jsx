@@ -32,7 +32,7 @@ const LoginCard = ({ redirect }) => {
       { ...formData, redirect },
       {
         onSuccess: () => {
-          navigate("/home");
+          navigate("/");
         },
       }
     );

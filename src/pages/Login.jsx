@@ -8,7 +8,7 @@ function Login() {
     const title = "Login";
     const [searchParams] = useSearchParams();
     const redirect = searchParams.get("redirect");
-    const redirectPath = redirect ? redirect : "/home";
+    const redirectPath = redirect ? redirect : "/";
 
     return (
         <div className="main-layout">
