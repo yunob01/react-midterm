@@ -4,21 +4,25 @@ import {
   createUserWithEmailAndPassword,
   GoogleAuthProvider,
   signInWithPopup,
+  updateProfile,
 } from "firebase/auth";
-import { doc, setDoc } from "firebase/firestore";
+import { doc, setDoc, getDoc } from "firebase/firestore";
 import { auth, db } from "@/api/firebaseConfig";
-
 
 export const getUserInfo = async () => {
   const user = auth.currentUser;
   if (user) {
+    const userDocRef = doc(db, "users", user.uid);
+    const userDocSnap = await getDoc(userDocRef);
+    const userData = userDocSnap.exists() ? userDocSnap.data() : {};
+
     return {
-      email: user.email,
-      displayName: user.displayName,
       uid: user.uid,
+      email: user.email,
+      username: userData.username || user.displayName || "", 
     };
   }
-  return null; // 沒有登入
+  return null; 
 };
 
 export const login = async ({ email, password }) => {
@@ -31,10 +35,15 @@ export const register = async ({ username, email, password }) => {
     email,
     password
   );
-  const user = userCredential?.user;
+  const user = userCredential.user;
+
   const docRef = doc(db, "users", user.uid);
   await setDoc(docRef, {
     username: username || "",
+  });
+
+  await updateProfile(user, {
+    displayName: username || "",
   });
 };
 

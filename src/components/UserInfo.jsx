@@ -5,13 +5,15 @@ import { useUserInfo } from '@/react-query/index.js';
 export default function UserInfo(props) {
    const navigate = useNavigate();
    const { data: userInfo } = useUserInfo();
+
    const goToProfile = () => {
       if (userInfo?.email)
-         navigate("/auth/profile")
+         navigate("/auth/profile");
       else
          navigate("/auth/login?redirect=/auth/profile");
    };
-   const userName = userInfo?.displayName || userInfo?.email?.split("@")[0] || "Login";
+
+   const userName = userInfo?.username || "Login";
 
    return (
       <nav
